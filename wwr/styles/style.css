@@ -1,24 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&display=swap');
+
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
+    font-family: Arvo, Helvetica, sans-serif;
 }
 
 nav a{
     text-align: center;
     color: black ;
     text-decoration: none;
+    font-family: Arvo, Helvetica, sans-serif;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4{
     text-align: center;
+    font-family: Arvo, Helvetica, sans-serif;
 }
 
 .button-box{
     text-align: center;
+    font-family: Arvo, Helvetica, sans-serif;
 }
 
 main section{
     text-align: center;
+    font-family: Arvo, Helvetica, sans-serif;
 }
 
 #background{
@@ -28,6 +37,9 @@ main section{
 
 body{
     background-color: #CBF3F0;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
 }
 
 header{
@@ -37,51 +49,73 @@ header{
 nav a:hover{
     background-color: white;
     color: #FF9F1C;
+    font-family: Arvo, Helvetica, sans-serif;
 }
 
 .book, .join{
     background-color: #CBF3F0;
     color: black;
     text-decoration: none;
+    font-family: Arvo, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
     background-color: white;
     color: #FF9F1C;
+    font-family: Arvo, Helvetica, sans-serif;
 }
 
 .msg{
     background-color: white;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer{
 background-color: white ;
 color: black;
+font-family: Arvo, Helvetica, sans-serif;
+padding: 25px 50px;
+margin-top: 200px;
 }
 
 .home-title{
     color: #FF9F1C;
+    font-family: Caveat, Helvetica, sans-serif ;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4{
     color: black;
+    font-family: Arvo, Helvetica, sans-serif;
 }
 
 .msg h2{
     color: #FF9F1C;
+    font-family: Caveat, Helvetica, sans-serif;
 }
 
 .msg p{
     color: #FF9F1C;
+    font-family: Arvo, Helvetica, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer a{
 color: black;
 text-decoration: none;
+font-family: Arvo, Helvetica, sans-serif;
 }
 
 footer a:hover{
     color: black;
+    font-family: Arvo, Helvetica, sans-serif;
 }
 
 .logo{
@@ -90,6 +124,7 @@ footer a:hover{
 
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img{
@@ -106,4 +141,28 @@ footer p a:hover{
 
 section h2{
     color: #FF9F1C
+}
+
+h2{
+    margin: 0;
+}
+
+#logo_link{
+    padding-top: 5px;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+.river-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid black;
+}
+
+main section img{
+    box-sizing: border-box;
 }
