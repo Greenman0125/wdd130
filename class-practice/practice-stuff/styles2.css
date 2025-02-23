@@ -1,0 +1,13 @@
+body{
+display:grid;
+grid-column: 1/4;
+grid-template-columns: 1fr 2fr 1fr;
+}
+
+header{
+grid-row:span 3;
+}
+
+
+
+
