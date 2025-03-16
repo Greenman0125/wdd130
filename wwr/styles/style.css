@@ -20,6 +20,10 @@ nav a{
     font-family: Arvo, Helvetica, sans-serif;
 }
 
+#hero-msg h4{
+    color:#FF9F1C
+}
+
 .button-box{
     text-align: center;
     font-family: Arvo, Helvetica, sans-serif;
@@ -103,10 +107,6 @@ footer{
     margin-top: 10px;
 }
 
-h4{
-    color: black;
-    font-family: Arvo, Helvetica, sans-serif;
-}
 
 .msg h2{
     color: #FF9F1C;
@@ -243,6 +243,69 @@ nav {
     transform: scale(1.1);
 }
 
+
+
+
+
+#hero2{
+    display: grid;
+    margin-left: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#hero-msg2{
+    grid-column: 1/2;
+    grid-row: 1;
+    padding-bottom: 125px;
+    
+}
+
+#hero-msg2 h1{
+    color: #FF9F1C;
+    font-family: Caveat, Helvetica, sans-serif ;
+    font-size: 36px;
+    padding-left: 5px;
+}
+
+#hero-msg2 h4{
+    width: 500px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arvo, Helvetica, sans-serif;
+}
+
+.FAQ-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gear{
+    grid-column: 2/3;
+    padding-top: 40px;
+}
+
+.FAQ-responses h1{
+    color: #FF9F1C;
+    padding-bottom: 50px;
+    font-family: Caveat, Helvetica, sans-serif ;
+    font-size: 36px;
+}
+
+.FAQ-responses h2{
+    display: grid;
+    font-size: 28px;
+    grid-column: 1/2;
+    text-align: left;
+    padding: 40px;
+    font-family: Caveat, Helvetica, sans-serif ;
+}
+
+.FAQ-responses p{
+    font-size: 18px;
+    padding: 10px;
+    font-family: Arvo, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
