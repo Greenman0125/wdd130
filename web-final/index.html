@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E&E Web Design | Home page</title>
+    <link rel="stylesheet" href="styles/finalstyle.css">
+</head>
+<body>
+    <div id="content">
+    <header>
+        <a href="index.html" id="logo_link">
+            <img class="logo" src="images/website-logo.png" alt="Website Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>  
+            <a href="site-plan.html">Site Plan</a>   
+            <a href="page-2.html">Page 2</a>   
+            <a href="page-3.html">Page 3</a>   
+
+        </nav>
+    </header>
+    <main class="content2">
+        <div id="hero2">
+            <section id="hero-msg2">
+                <h1 class="page1_topics">Some WDD 130 topics</h1>
+                <p>Topic 1</p>
+                <p>Topic 2</p>
+                <p>Topic 3</p>
+                <p>Topic 4</p>
+                <p>Topic 5</p>
+                <p>Topic 6</p>
+            </section>
+        </div>
+        <div class="start_msg">
+            <h1>Purpose of the website and rules of the game.</h1>
+            <p>There will be two pages, both with a unique question addressing some web design concept and there will be a selection of options for you to choose from and see if your understanding of the concept matches what the answer was.</p>
+            <section class="modal hidden">
+                <div class="flex">
+                  <button class="btn-close">⨉</button>
+                </div>
+                <div>
+                  <h3>Here's the answer! </h3>
+                  <p>
+                    42
+                  </p>
+                </div>
+              </section>
+              
+              <div class="overlay hidden"></div>
+              <button class="btn btn-open">(When clicked, this will show the actual answer)</button>
+        </div>
+        <script>const modal = document.querySelector(".modal");
+            const overlay = document.querySelector(".overlay");
+            const openModalBtn = document.querySelector(".btn-open");
+            const closeModalBtn = document.querySelector(".btn-close");
+            
+            // close modal function
+            const closeModal = function () {
+              modal.classList.add("hidden");
+              overlay.classList.add("hidden");
+            };
+            
+            // close the modal when the close button and overlay is clicked
+            closeModalBtn.addEventListener("click", closeModal);
+            overlay.addEventListener("click", closeModal);
+            
+            // close modal when the Esc key is pressed
+            document.addEventListener("keydown", function (e) {
+              if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+                closeModal();
+              }
+            });
+            
+            // open modal function
+            const openModal = function () {
+              modal.classList.remove("hidden");
+              overlay.classList.remove("hidden");
+            };
+            // open modal event
+            openModalBtn.addEventListener("click", openModal);</script>
+    </main>
+    <footer>
+        <p>E&E &copy; 2025 - Joseph Buss</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html> 

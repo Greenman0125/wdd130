@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E&E Web Design | Home page</title>
+    <link rel="stylesheet" href="styles/finalstyle.css">
+</head>
+<body>
+    <div id="content">
+    <header>
+        <a href="index.html" id="logo_link">
+            <img class="logo" src="images/website-logo.png" alt="Website Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>  
+            <a href="site-plan.html">Site Plan</a>   
+            <a href="page-2.html">Page 2</a>   
+            <a href="page-3.html">Page 3</a>   
+
+        </nav>
+    </header>
+    <main class="content2">
+        <div id="hero2">
+            <section id="hero-msg2">
+                <h1 class="page2_instructions">List of instructions</h1>
+                <p>Step 1</p>
+                <p>Step 2</p>
+                <p>Step 3</p>
+                <p>Step 4</p>
+                <p>Step 5</p>
+                <p>Step 6</p>
+            </section>
+        </div>
+        <img class="page2_img" src="images\pexels-mikhail-nilov-6963062.jpg" alt="Confused programmer">
+        <div class="start_msg2">
+            <div class="page2_question">
+                <h1>Problem 1</h1>
+                <p>This will be where the question is, what the user would need to study, and what kind of an answer or solution you'll try to get.</p>
+            </div>  
+            <section class="page2_answers">
+                <p>This will be answer 1</p>
+                <p>This will be answer 2</p>
+                <p>This will be answer 3</p>
+            </section>
+            <section class="modal hidden">
+                <div class="flex">
+                  <button class="btn-close">⨉</button>
+                </div>
+                <div>
+                  <h3>This is the answer! </h3>
+                  <p>
+                    42
+                  </p>
+                </div>
+              </section>
+              
+              <div class="overlay hidden"></div>
+              <button class="btn btn-open">Show Answer</button>
+        </div>
+        <script>const modal = document.querySelector(".modal");
+            const overlay = document.querySelector(".overlay");
+            const openModalBtn = document.querySelector(".btn-open");
+            const closeModalBtn = document.querySelector(".btn-close");
+            
+            // close modal function
+            const closeModal = function () {
+              modal.classList.add("hidden");
+              overlay.classList.add("hidden");
+            };
+            
+            // close the modal when the close button and overlay is clicked
+            closeModalBtn.addEventListener("click", closeModal);
+            overlay.addEventListener("click", closeModal);
+            
+            // close modal when the Esc key is pressed
+            document.addEventListener("keydown", function (e) {
+              if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+                closeModal();
+              }
+            });
+            
+            // open modal function
+            const openModal = function () {
+              modal.classList.remove("hidden");
+              overlay.classList.remove("hidden");
+            };
+            // open modal event
+            openModalBtn.addEventListener("click", openModal);</script>
+    </main>
+    <footer>
+        <p>E&E &copy; 2025 - Joseph Buss</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html> 
