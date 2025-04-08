@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="styles/webcomponent.css">
+</head>
+<body>
+    <section class="modal hidden">
+        <div class="flex">
+          <button class="btn-close">⨉</button>
+        </div>
+        <div>
+          <h3>I have a message for you! </h3>
+          <p>
+            The code for w3schools.com didn't work for me (though it's probably my fault) so I used some code from freecodecamp.org. That's it, message done.
+          </p>
+        </div>
+      </section>
+      
+      <div class="overlay hidden"></div>
+      <button class="btn btn-open">Open Modal</button>
+      
+      <script>const modal = document.querySelector(".modal");
+        const overlay = document.querySelector(".overlay");
+        const openModalBtn = document.querySelector(".btn-open");
+        const closeModalBtn = document.querySelector(".btn-close");
+        
+        // close modal function
+        const closeModal = function () {
+          modal.classList.add("hidden");
+          overlay.classList.add("hidden");
+        };
+        
+        // close the modal when the close button and overlay is clicked
+        closeModalBtn.addEventListener("click", closeModal);
+        overlay.addEventListener("click", closeModal);
+        
+        // close modal when the Esc key is pressed
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+            closeModal();
+          }
+        });
+        
+        // open modal function
+        const openModal = function () {
+          modal.classList.remove("hidden");
+          overlay.classList.remove("hidden");
+        };
+        // open modal event
+        openModalBtn.addEventListener("click", openModal);</script>
+</body>
+</html>
