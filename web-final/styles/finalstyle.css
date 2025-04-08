@@ -189,6 +189,7 @@ nav a:hover {
     grid-row: 1/2;
     width: 100%;
     justify-content: left;
+    padding-right: 50px;
 }
 
 #hero-msg3 {
@@ -311,14 +312,30 @@ footer{
     color: white;
 }
 
-.page2_answers p:hover{
+.page2_answer1:hover{
     color: red;
 }
 
-.page3_answers p:hover{
+.page2_answer2:hover{
+    color: green;
+}
+
+.page2_answer3:hover{
+    color: yellow;
+}
+
+
+.page3_answer1:hover{
     color: red;
 }
 
+.page3_answer2:hover{
+    color: yellow;
+}
+
+.page3_answer3:hover{
+    color: green;
+}
 
 
 * {
